@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 from turtle import *
+speed("fastest")
 
-
-degree = 1
-distance = 50
 
 for i in range(40):
-    forward(distance)
-    right(degree)
-    degree += 2
-    distance -= 1
+    forward(100)
+    if i % 4 == 1:
+    	right(160)
+    elif i % 4 == 3:
+        right(20)
+    else:
+         right(10)    	
 
 input()
-
